@@ -1,0 +1,11 @@
+Model Information:
+* title:	Versace Bag
+* source:	https://sketchfab.com/3d-models/versace-bag-e0bfc49fde124fb89cd5cacb0be1a1d6
+* author:	hanish Goar (https://sketchfab.com/hanish)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Versace Bag" (https://sketchfab.com/3d-models/versace-bag-e0bfc49fde124fb89cd5cacb0be1a1d6) by hanish Goar (https://sketchfab.com/hanish) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

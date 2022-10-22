@@ -1,0 +1,11 @@
+Model Information:
+* title:	O My Bag (Scaniverse)
+* source:	https://sketchfab.com/3d-models/o-my-bag-scaniverse-d8a02d06dba0443e87fd68b563e19448
+* author:	Goto (https://sketchfab.com/Takotaro)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "O My Bag (Scaniverse)" (https://sketchfab.com/3d-models/o-my-bag-scaniverse-d8a02d06dba0443e87fd68b563e19448) by Goto (https://sketchfab.com/Takotaro) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

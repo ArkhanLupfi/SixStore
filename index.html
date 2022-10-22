@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Store</title>
+
+    <!-- Logo -->
+    <link rel="icon" href="assets/images/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <ul class="nav-list">
+            <a class="navbar-brand" href="#">
+                <img class="img1" src="assets/images/logo.png" alt="" width="45" height="45">
+                <h3>SIX<span class="web"> STORE</span></h3>
+            </a>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-home"></span>
+                    <span class="nav-text-home">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#category" class="nav-link">
+                    <span class="nav-icon fa fa-list"></span>
+                    <span class="nav-text">Category</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#product" class="nav-link">
+                    <span class="nav-icon fa-solid fa-bag-shopping"></span>
+                    <span class="nav-text">Product</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="category/contact.html" class="nav-link">
+                    <span class="nav-icon fa-solid fa-address-card"></span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                    style="width:auto;"><span class="nav-icon fa-solid fa-user"></i></span>
+                    <span class="nav-text">Login</span></a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Akhir nav -->
+
+
+    <!-- About -->
+    <section id="home">
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login' name="submit-to-google-sheet">
+                    <input type='text' class='input-field' placeholder='Email Id' required name="email">
+                    <input type='password' name="password" class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span class=" spn">Remember Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+                <form id='register' class='input-group-register' name="register-to-google-sheet">
+                    <input type='text' class='input-field' placeholder='First Name' required name="firstname">
+                    <input type='text' class='input-field' placeholder='Last Name ' required name="lastname">
+                    <input type='email' class='input-field' placeholder='Email Id' required name="email">
+                    <input type='password' class='input-field' placeholder='Enter Password' required name="password">
+                    <input type='password' class='input-field' placeholder='Confirm Password' required
+                        name="confirmpassword">
+                    <input type='checkbox' class='check-box'><span class="spn">I agree to the terms and
+                        conditions</span>
+                    <button type='submit' class='submit-btn-regis'>Register</button>
+                </form>
+            </div>
+        </div>
+        <div id="hero">
+            <h4>Trade-in-offer</h4>
+            <h1>Get up to 50% off</h1>
+            <h2>New Arrivals</h2>
+            <p>Spring / Summer Collection 2022</p>
+            <button class="shpp"><a href=" #category">Shop Now</a></button>
+        </div>
+    </section>
+    <!-- Akhir about -->
+
+    <!-- Awal content -->
+    <Section id="category">
+        <div class="box-container">
+            <div class="row-baris">
+                <div class="col-box">
+                    <a href="category/women.html"><img src="assets/images/tas9.png" alt=""></a>
+                    <div class="content">
+                        <span>Up to 50% off</span>
+                        <h4>For Women</h4>
+                    </div>
+                </div>
+                <div class="col-box">
+                    <a href="category/men.html"><img src="assets/images/taspria6.png" alt=""></a>
+                    <div class="content">
+                        <span>Up to 50% off</span>
+                        <h4>For Men</h4>
+                    </div>
+                </div>
+                <div class="col-box">
+                    <a href="category/children.html"><img src="assets/images/taspria4.png" alt=""></a>
+                    <div class="content">
+                        <span>Up to 25% off</span>
+                        <h4>For Children</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <!-- Akhir Content -->
+
+    <!-- Product Overview -->
+    <section class="overview">
+        <div class="container">
+            <a class="product-brand" href="#">
+                <h3>PRODUCT OVERVIEW</h3>
+            </a>
+            <ul class="product-list">
+                <li class="product-item">
+                    <a href="#product" class="product-link">
+                        <span class="product-text-all">All Products</span>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="category/women.html" class="product-link">
+                        <span class="product-text">Women</span>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="category/men.html" class="product-link">
+                        <span class="product-text">Men</span>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="category/children.html" class="product-link">
+                        <span class="product-text">Children</span>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="category/limited.html" class="product-link">
+                        <span class="product-text">Limited</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <!-- Awal Product -->
+    <main id="product">
+        <!-- New page -->
+        <div class="contact-container" id="newBox">
+            <div class="row-contact">
+                <div class="row" id="productBox1">
+                    <div class="contact-left">
+                        <a href="assets/images/tas15.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tas15.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- Product2 -->
+                <div class="row-contact" id="productBox2">
+                    <div class="contact-left">
+                        <a href="assets/images/tas9.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tas9.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- Product3 -->
+                <div class="row-contact" id="productBox3">
+                    <div class="contact-left">
+                        <a href="assets/images/tas12.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tas12.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product4 -->
+                <div class="row-contact" id="productBox4">
+                    <div class="contact-left">
+                        <a href="assets/images/tas18.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tas18.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product5 -->
+                <div class="row-contact" id="productBox5">
+                    <div class="contact-left">
+                        <a href="assets/images/taspria1.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/taspria1.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product6 -->
+                <div class="row-contact" id="productBox6">
+                    <div class="contact-left">
+                        <a href="assets/images/taspria2.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/taspria2.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product7 -->
+                <div class="row-contact" id="productBox7">
+                    <div class="contact-left">
+                        <a href="assets/images/taspria3.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/taspria3.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product 8 -->
+                <div class="row-contact" id="productBox8">
+                    <div class="contact-left">
+                        <a href="assets/images/taspria6.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/taspria6.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- prudct9 -->
+                <div class="row-contact" id="productBox9">
+                    <div class="contact-left">
+                        <a href="assets/images/tasanak4.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tasanak4.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product10 -->
+                <div class="row-contact" id="productBox10">
+                    <div class="contact-left">
+                        <a href="assets/images/tasanak5.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tasanak5.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product11 -->
+                <div class="row-contact" id="productBox11">
+                    <div class="contact-left">
+                        <a href="assets/images/tasanak1.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tasanak1.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+                <!-- product12 -->
+                <div class="row-contact" id="productBox12">
+                    <div class="contact-left">
+                        <a href="assets/images/tasanak3.png" fancybox data-fancybox="Product">
+                            <img src="assets/images/tasanak3.png" alt="">
+                        </a>
+                        <h4>Casual Clothes</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$40.00</span>
+                    </div>
+                </div>
+
+                <!-- Form Penjualan-->
+                <section name="Cloaise-contact-form">
+                    <div class="contact-right">
+                        <span onclick="back(wrapper)" class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+                        <h1>Make an order</h1>
+                        <form action="input" name="Data-to-google-sheet">
+                            <input type="text" name="productname" placeholder="Product Name" required>
+                            <input type="text" name="productprice" placeholder="Product Price" required>
+                            <select id="color" name="color">
+                                <option value="#">Select Color</option>
+                                <option value="Pink">Pink</option>
+                                <option value="Green">Green</option>
+                                <option value="Brown">Brown</option>
+                                <option value="Black">Black</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Blue">Cream</option>
+                            </select>
+                            <select id="payment" name="payment">
+                                <option value="#">Select Payment</option>
+                                <option value="Bca">BCA</option>
+                                <option value="Mandiri">Mandiri</option>
+                                <option value="Minimarket">Minimarket</option>
+                            </select>
+                            <textarea name="address" rows="2" placeholder="Your address & No Hp"></textarea>
+                            <button class="btn2 btn-kirim" type="submit">Pesan</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- Section Page - List Produk -->
+        <div class="container" id="wrapper">
+            <h2 class="title">Product List</h2>
+            <!-- row / baris -->
+            <div class="row">
+                <!-- Column / kolom -->
+                <div class="col">
+                    <a href="assets/images/tas15.png" fancybox" data-fancybox="Product">
+                        <img src="assets/images/tas15.png" alt="">
+                    </a>
+                    <h4>Casual Clothes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Square Neck Back')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$40.00</span>
+                    <span onclick="shopDetail(1)" id="product1"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/tas9.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/tas9.png" alt="">
+                    </a>
+                    <h4>Square Neck Back</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Square Neck Back')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$35.00</span>
+                    <span onclick="shopDetail(2)"><i class=" shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/tas12.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/tas12.png" alt="">
+                    </a>
+                    <h4>Plain T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Long Pants')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$50.00</span>
+                    <span onclick="shopDetail(3)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/tas18.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/tas18.png" alt="">
+                    </a>
+                    <h4>Plain T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Long Pants')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$50.00</span>
+                    <span onclick="shopDetail(4)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/taspria1.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/taspria1.png" alt="">
+                    </a>
+                    <h4>Plain T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Long Pants')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$50.00</span>
+                    <span onclick="shopDetail(5)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/taspria2.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/taspria2.png" alt="">
+                    </a>
+                    <h4>Plain T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Long Pants')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$50.00</span>
+                    <span onclick="shopDetail(6)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/taspria3.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/taspria3.png" alt="">
+                    </a>
+                    <h4>Plain T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Long Pants')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$50.00</span>
+                    <span onclick="shopDetail(7)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/taspria6.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/taspria6.png" alt="">
+                    </a>
+                    <h4>Plain T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Long Pants')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$50.00</span>
+                    <span onclick="shopDetail(8)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <!-- Tas Anak -->
+                <div class="col">
+                    <a href="assets/images/tasanak4.png" fancybox" data-fancybox="Product">
+                        <img src="assets/images/tasanak4.png" alt="">
+                    </a>
+                    <h4>Casual Clothes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Casual Clothes')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$40.00</span>
+                    <span onclick="shopDetail(9)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/tasanak5.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/tasanak5.png" alt="">
+                    </a>
+                    <h4>Square Neck Back</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Square Neck Back')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$35.00</span>
+                    <span onclick="shopDetail(10)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/tasanak1.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/tasanak1.png" alt="">
+                    </a>
+                    <h4>Square Neck Back</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Square Neck Back')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$35.00</span>
+                    <span onclick="shopDetail(11)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="col">
+                    <a href="assets/images/tasanak3.png" class="fancybox" data-fancybox="Product">
+                        <img src="assets/images/tasanak3.png" alt="">
+                    </a>
+                    <h4>Square Neck Back</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span onclick="chat('Square Neck Back')"><i class=" wa fa-brands fa-whatsapp"></i></span>
+                    </div>
+                    <span>$35.00</span>
+                    <span onclick="shopDetail(12)"><i class="shop fa-solid fa-cart-shopping"></i></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Akhir Content -->
+
+    <!-- Awal Footer -->
+    <footer class="footer-area">
+        <div id="container" class="container">
+            <div class="footer">
+                <div class="single-footer">
+                    <h4>About us</h4>
+                    <p>The products in our store are very high quality products in terms of material and appearance. Our
+                        products at a fairly affordable price but do not reduce the quality of the product so that all
+                        consumers can have a good product at a low price</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/ArkhanLupfi" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/lupfi15" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/6281804831455?text=Hallo" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="http://twitter.com/LupfiArkhan" target="_blank">
+                            <i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>Quick links</h4>
+                    <ul class="footer-list">
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-caret-right"></i> Home</a></li>
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-caret-right"></i> About</a></li>
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-caret-right"></i> Products</a>
+                        </li>
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-caret-right"></i> Contact
+                                Person</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-list">
+                        <li><i class="fa-solid fa-caret-right"></i> Monday : 09.00 - 17.00</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Tuesday : 09.00 - 17.00</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Wednesday : 09.00 - 17.00</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Thursday : 09.00 - 17.00</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Friday : 13.00 - 20.00</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Saturday : 09.00 - 16.00</li>
+                        <li><i class="fa-solid fa-caret-right"></i> Sunday : Shop Closed</li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-list">
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-location-dot"></i> Condet, Jaktim
+                                66666, IN</a></li>
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-phone"></i> +62 6666 666 666</a></li>
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-envelope"></i> SixStore@gmail.com</a>
+                        </li>
+                        <li><a href="" class="footer-link"><i class="fa-solid fa-globe"></i> www.SixStore666.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer-bottom-area">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="copy">
+                    <p>Copyright <i class="fa-solid fa-at"></i><span id="year"></span> All Rights Reserved | This
+                        template is made with by Kelompok 6.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Footer -->
+
+
+    <!-- login form database -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzALVf1pGqtomoa9ZtHahAtc6Kr6xuZZ0Q2faUMzK-GNH0QRjozouvmoHY_cWiCQ5K4fA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+            form.reset()
+            alert('Login Succses!.')
+            console.log('Success!', response);
+        })
+            .catch(error => console.error('Error!', error.message))
+    </script>
+
+    <script>
+        const scriptURLL = 'https://script.google.com/macros/s/AKfycbyUiybhMp3Hmm-6wY7X7eQb2oLGsAe-Apw5khuEeRWxZZ5aHJ1wKgvxGhgpVvCeJ8qfZQ/exec'
+        const formm = document.forms['register-to-google-sheet']
+
+        formm.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURLL, { method: 'POST', body: new FormData(formm) })
+                .then(response => console.log('Success!', response))
+            formm.reset()
+            alert('Register Succses!.')
+            console.log('Success!', response);
+        })
+            .catch(error => console.error('Error!', error.message))
+    </script>
+
+
+    <script>
+        const scriptURLLL = 'https://script.google.com/macros/s/AKfycbzGQ8lz2FI6CNitwDEY9otQgmG7SPMfYFVtaBuliCfgfIPlglqIIfth1Qn7Ro5NkpwW/exec'
+        const formmm = document.forms['Data-to-google-sheet']
+
+        formmm.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURLLL, { method: 'POST', body: new FormData(formmm) })
+                .then(response => console.log('Success!', response))
+            formmm.reset()
+            alert('Pesanan Succses, Pesanan anda akan segera kami kirim, Terima Kasih!.')
+            console.log('Success!', response);
+        })
+            .catch(error => console.error('Error!', error.message))
+    </script>
+
+    <script src="init.js"></script>
+</body>
+
+</html>

@@ -843,6 +843,17 @@ model-viewer {
         margin-top: 2em;
     }
 
+    .form-box {
+        width: 350px;
+        height: 500px;
+        position: relative;
+        margin: 2% auto;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        overflow: hidden;
+    }
+
 
     /* Footer */
     .footer {

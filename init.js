@@ -18,7 +18,7 @@ window.onclick = function (event) {
         modal.style.display = "none";
         hero.style.display = "block"
     }
-    hero.style.display = "block"
+    return (hero);
 }
 
 document.getElementById("year").innerHTML = new Date().getFullYear();

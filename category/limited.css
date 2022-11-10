@@ -313,3 +313,120 @@ model-viewer {
 
 
 /* Akhir footer */
+
+
+
+
+
+
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 587px) {
+
+    /* lakukan responsive code */
+    .navbar-brand {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 16px;
+        z-index: 9;
+        padding: 10px;
+    }
+
+    .nav-list {
+        background-color: white;
+        border-radius: 20px;
+        justify-content: space-around;
+    }
+
+    .nav-link {
+        opacity: 1;
+    }
+
+    .nav-icon {
+        display: block !important;
+        font-size: 24px;
+        transition: .25s;
+    }
+
+    .nav-icon:hover {
+        transform: translateY(-10%);
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-text-home {
+        display: none;
+    }
+
+
+    /* Category */
+    .col-box {
+        flex-basis: 60%;
+    }
+
+    .col {
+        flex-basis: 60%;
+    }
+
+    .product-brand h3 {
+        margin-left: 0.7em;
+        font-size: 1.2em;
+        font-weight: 750;
+    }
+
+    .product-link {
+        font-size: 0.8em;
+        margin-left: 1.2em;
+    }
+
+    .product-text-men::after {
+        width: 35px;
+        height: 3px;
+    }
+
+    .contact-container {
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+
+
+    #limited h3 {
+        font-size: 1.5em;
+    }
+
+    #limited p {
+        font-size: 1.1em;
+        letter-spacing: 0.5;
+    }
+
+    /* Footer */
+    .footer {
+        margin-left: 1.5em;
+    }
+
+    .footer-area {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .single-footer,
+    .single-footer:nth-child(1) {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom-area {
+        width: 100vw;
+        margin-bottom: 7em;
+        justify-content: center;
+        text-align: center;
+    }
+}
